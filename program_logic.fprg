@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jessics"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-12 09:16:30 PM"/>
+        <attribute name="created" value="SmVzc2ljcztKRVNTSUNTLUhQOzIwMTktMDMtMTI7MDg6Mzk6NTkgUE07Mjc0OQ=="/>
+        <attribute name="edited" value="SmVzc2ljcztKRVNTSUNTLUhQOzIwMTktMDMtMTI7MDk6MTY6MzAgUE07MTsyODQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="StudentID" type="String" array="False" size=""/>
+            <declare name="firstName" type="String" array="False" size=""/>
+            <declare name="lastName" type="String" array="False" size=""/>
+            <output expression="&quot;Enter a student ID number&quot;" newline="True"/>
+            <while expression="&quot;Student ID is not in Database&quot;">
+                <output expression="&quot;Enter a correct student ID number&quot;" newline="True"/>
+            </while>
+            <if expression="&quot;Did student submit something?&quot;">
+                <then>
+                    <output expression="&quot;Enter a date of subbmission&quot;" newline="True"/>
+                    <declare name="date" type="String" array="False" size=""/>
+                    <input variable="date"/>
+                    <output expression="&quot;Enter a subject of subbmission&quot;" newline="True"/>
+                    <declare name="subject" type="String" array="False" size=""/>
+                    <input variable="subject"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="&quot;Would you like to see student's progress?&quot;">
+                <then>
+                    <output expression="&quot;ouput in the JPanel from Database: StudentID, firstName, lastName, date of submission and object of submission.&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
